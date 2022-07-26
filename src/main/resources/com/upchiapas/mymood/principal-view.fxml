@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.mymood.controllers.MainController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="420.0" prefWidth="305.0" style="-fx-background-color: #EAEDED;">
+         <children>
+            <Label text="Bienvenido a" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/logoMymood.jpg" />
+               </image>
+            </ImageView>
+            <Label text="¿Estas Registrado en MyMood?" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="40.0" right="40.0" />
+               </padding>
+               <children>
+                  <Button fx:id="btnIniciarSesion" mnemonicParsing="false" onAction="#actionEvent" onMouseClicked="#btnIniciarSesionOnMouseClicked" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: transparent; -fx-border-color: gray; -fx-border-radius: 8px; -fx-background-radius: 8px;" text="Iniciar Sesión" textFill="#d0a924">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRegistrarse" mnemonicParsing="false" onMouseClicked="#btnRegistrarseOnMouseClicked" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: transparent; -fx-border-color: gray; -fx-border-radius: 8px; -fx-background-radius: 8px;" text="Registrarse" textFill="#d0a924">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

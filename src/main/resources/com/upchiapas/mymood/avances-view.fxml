@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane cache="true" prefHeight="630.0" prefWidth="900.0" style="-fx-background-color: #ABEBC6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.mymood.controllers.AvancesController">
+   <children>
+      <Text layoutX="351.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avances" wrappingWidth="198.11593627929688">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="40.0" />
+         </font>
+      </Text>
+      <Label layoutX="60.0" layoutY="144.0" prefHeight="46.0" prefWidth="198.0" text="Nombre:" textAlignment="CENTER">
+         <font>
+            <Font name="Gill Sans MT" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtNombre" layoutX="190.0" layoutY="144.0" prefHeight="45.0" prefWidth="440.0" style="-fx-background-color: #EAEDED;">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="686.0" layoutY="144.0" prefHeight="46.0" prefWidth="144.0" text="Edad:" textAlignment="CENTER">
+         <font>
+            <Font name="Gill Sans MT" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtEdad" alignment="CENTER" layoutX="766.0" layoutY="144.0" prefHeight="45.0" prefWidth="63.0" style="-fx-background-color: #EAEDED;" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="202.0" prefHeight="47.0" prefWidth="350.0" text="Emociones selecionadas:" textAlignment="CENTER">
+         <font>
+            <Font name="Gill Sans MT" size="32.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="290.0" layoutY="257.0" prefHeight="347.0" prefWidth="320.0" style="-fx-background-color: #EAEDED;">
+         <children>
+            <Label fx:id="txtEmociones" layoutX="40.0" layoutY="10.0" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" top="10.0" />
+         </padding></AnchorPane>
+      <HBox prefHeight="46.0" prefWidth="900.0" style="-fx-background-color: #d0a924;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/MyMoodLogo.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnAsistente" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btnAsistenteOnMouseClicked" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #d0a924;" text="Mi Asistente" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnConsejos" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btnConsejosOnMouseClicked" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #d0a924;" text="Consejos" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAvances" alignment="CENTER" disable="true" mnemonicParsing="false" onMouseClicked="#btnAvancesOnMouseClicked" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #F7DC6F;" text="Mis Emociones" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnServiciosP" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btnServiciosPOnMouseClicked" prefHeight="45.0" prefWidth="188.0" style="-fx-background-color: #d0a924;" text="Servicios y Profecionales" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnCerrarSesion" alignment="CENTER" cache="true" mnemonicParsing="false" onMouseClicked="#btnCerrarSesionOnMouseClicked" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: #B93029;" text="Cerrar Sesión" textAlignment="CENTER" translateX="91.0" wrapText="true">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </HBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="59.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/imgAvans1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="730.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/imgAvans2.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

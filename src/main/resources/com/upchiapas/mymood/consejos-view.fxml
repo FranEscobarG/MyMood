@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane cache="true" prefHeight="630.0" prefWidth="900.0" style="-fx-background-color: #ABEBC6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.mymood.controllers.ConsejosController">
+    <children>
+        <Text layoutX="338.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consejos" wrappingWidth="223.71591186523438">
+            <font>
+                <Font name="Copperplate Gothic Bold" size="40.0" />
+            </font>
+        </Text>
+      <AnchorPane layoutX="50.0" layoutY="297.0" prefHeight="146.0" prefWidth="800.0" style="-fx-background-color: #EAEDED;">
+         <children>
+            <Text layoutX="7.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: blue;" text="Para subir el estado de ánimo es necesario seguir una alimentación basada en alimentos y no en productos, es decir, desterrar los procesados en la medida de lo posible y optar por alimentos tales como verduras, frutas, tubérculos y proteínas frescas de calidad (pescados, carnes, huevos)." textAlignment="JUSTIFY" wrappingWidth="580.0">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="596.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/consejo2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="261.0" layoutY="8.0" prefHeight="35.0" prefWidth="326.0" text="Mantener una alimentación sana y equilibrada">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="142.0" prefHeight="135.0" prefWidth="806.0" style="-fx-background-color: #EAEDED;">
+         <children>
+            <Text layoutX="230.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: blue;" text="Mantener y establecer una rutina diaria favorece la mejora del ánimo debido a que proporciona un sentido de estabilidad y coherencia en el día a día, disminuyendo la impredecibilidad o la incertidumbre de no saber qué nos espera cada día al levantarnos." textAlignment="JUSTIFY" wrappingWidth="564.800048828125">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/consejo1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="230.0" layoutY="10.0" prefHeight="35.0" prefWidth="449.0" text="Mantenerse activo y distraído: la importancia de las rutinas">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="462.0" prefHeight="135.0" prefWidth="806.0" style="-fx-background-color: #EAEDED;">
+         <children>
+            <Text layoutX="230.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: blue;" text="Mantener una higiene del sueño adecuada es un factor fundamental para conservar un buen estado de ánimo. La descompensación en el número o regularidad de las horas de sueño pueden causar desequilibrios químicos que favorecen estados de ánimo negativos. Para mejorar el estado de ánimo es importante dormir y descansar el tiempo suficiente, en torno a unas ocho horas." textAlignment="JUSTIFY" wrappingWidth="564.8000488281249">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/consejo3.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="230.0" layoutY="10.0" prefHeight="35.0" prefWidth="238.0" text="Mantenerse socialmente activo">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+      <HBox prefHeight="46.0" prefWidth="900.0" style="-fx-background-color: #d0a924;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/MyMoodLogo.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnAsistente" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btnAsistenteOnMouseClicked" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #d0a924;" text="Mi Asistente" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnConsejos" alignment="CENTER" disable="true" mnemonicParsing="false" onMouseClicked="#btnConsejosOnMouseClicked" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #F7DC6F;" text="Consejos" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAvances" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btnAvancesOnMouseClicked" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #d0a924;" text="Mis Avances" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnServiciosP" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btnServiciosPOnMouseClicked" prefHeight="45.0" prefWidth="188.0" style="-fx-background-color: #d0a924;" text="Servicios y Profecionales" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnCerrarSesion" alignment="CENTER" cache="true" mnemonicParsing="false" onMouseClicked="#btnCerrarSesionOnMouseClicked" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: #B93029;" text="Cerrar Sesión" textAlignment="CENTER" translateX="91.0" wrapText="true">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </HBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane cache="true" prefHeight="630.0" prefWidth="900.0" style="-fx-background-color: #ABEBC6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.mymood.controllers.HomeController">
+   <children>
+      <Text layoutX="312.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENIDO" textAlignment="CENTER">
+         <font>
+            <Font name="Footlight MT Light" size="50.0" />
+         </font>
+      </Text>
+      <Text layoutX="203.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Cómo te sientes hoy?" wrappingWidth="492.51593017578125">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="40.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="46.0" prefWidth="900.0" style="-fx-background-color: #d0a924;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/MyMoodLogo.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnAsistente" alignment="CENTER" disable="true" mnemonicParsing="false" onMouseClicked="#btnAsistenteOnMouseClicked" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #F7DC6F;" text="Mi Asistente" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnConsejos" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btnConsejosOnMouseClicked" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #d0a924;" text="Consejos" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAvances" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btnAvancesOnMouseClicked" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #d0a924;" text="Mis Avances" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnServiciosP" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btnServiciosPOnMouseClicked" prefHeight="45.0" prefWidth="188.0" style="-fx-background-color: #d0a924;" text="Servicios y Profecionales" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnCerrarSesion" alignment="CENTER" cache="true" mnemonicParsing="false" onMouseClicked="#btnCerrarSesionOnMouseClicked" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: #B93029;" text="Cerrar Sesión" textAlignment="CENTER" translateX="91.0" wrapText="true">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></HBox>
+      <Button fx:id="btnEnojo" alignment="BOTTOM_CENTER" layoutX="100.0" layoutY="195.0" mnemonicParsing="false" onMouseClicked="#btnEnojoOnMouseClicked" style="-fx-background-color: #ABEBC6;" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/Enojo.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="108.0" layoutY="337.0" prefHeight="24.0" prefWidth="150.0" text="Enojo">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnFrustrado" alignment="BOTTOM_CENTER" layoutX="367.0" layoutY="286.0" mnemonicParsing="false" onMouseClicked="#btnFrustradoOnMouseClicked" style="-fx-background-color: #ABEBC6;" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/Frustrado.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="374.0" layoutY="431.0" prefHeight="24.0" prefWidth="150.0" text="Frustrado">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMiedo" alignment="BOTTOM_CENTER" layoutX="631.0" layoutY="198.0" mnemonicParsing="false" onMouseClicked="#btnMiedoOnMouseClicked" style="-fx-background-color: #ABEBC6;" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/Miedo.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="640.0" layoutY="337.0" prefHeight="24.0" prefWidth="150.0" text="Miedo">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnTriste" alignment="BOTTOM_CENTER" layoutX="95.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#btnTristeOnMouseClicked" style="-fx-background-color: #ABEBC6;" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/Triste.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnPensativo" alignment="BOTTOM_CENTER" layoutX="631.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#btnPensativoOnMouseClicked" style="-fx-background-color: #ABEBC6;" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/Pensativo.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="551.0" prefHeight="24.0" prefWidth="150.0" text="Triste">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="640.0" layoutY="554.0" prefHeight="24.0" prefWidth="150.0" text="Pensativo">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

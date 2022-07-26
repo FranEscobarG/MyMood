@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="400.0" style="-fx-background-color: #EAEDED;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.mymood.controllers.MotivosMiedoController">
+   <children>
+      <Button layoutX="43.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#btnFracasoOnMouseClicked" prefHeight="46.0" prefWidth="308.0" style="-fx-background-color: #EB984E;" text="Fracaso">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="51.0" prefHeight="46.0" prefWidth="308.0" text="¿Porque tienes miedo?" textAlignment="CENTER">
+         <font>
+            <Font name="Gill Sans MT" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="43.0" layoutY="205.0" mnemonicParsing="false" onMouseClicked="#btnFobiaOnMouseClicked" prefHeight="46.0" prefWidth="308.0" style="-fx-background-color: #EB984E;" text="Fobia">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="43.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#btnRechazoOnMouseClicked" prefHeight="46.0" prefWidth="308.0" style="-fx-background-color: #EB984E;" text="Rechazo">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="337.0" prefHeight="46.0" prefWidth="282.0" text="Actividad recomendada:" textAlignment="CENTER">
+         <font>
+            <Font name="Gill Sans MT" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblactividadM" alignment="CENTER" layoutX="43.0" layoutY="383.0" prefHeight="84.0" prefWidth="308.0" style="-fx-background-color: #FAD7A0;" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Button fx:id="btnCerrar" alignment="CENTER" cache="true" layoutX="315.0" layoutY="505.0" mnemonicParsing="false" onMouseClicked="#btnCerrarOnMouseClicked" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: #B93029;" text="Cerrar" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
